@@ -4,8 +4,6 @@ from unittest.mock import patch
 import pytest
 import requests
 
-from mercado_bitcoin.apis import DaySummaryApi
-
 from mercado_bitcoin.apis import DaySummaryApi, TradesApi, MercadoBitcoinApi
 
 
