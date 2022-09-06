@@ -13,7 +13,7 @@ def cotacao(valor):
 
 moeda = cotacao(1)
 time.sleep(5)
-print("Cotacao atual: {}".format(moeda))
+print("\n\tCotacao atual: {}\n\n".format(moeda))
 # %%
 with open('cambio.csv', 'a') as f:
     f.write(
