@@ -2,7 +2,7 @@ import datetime
 from abc import ABC, abstractmethod
 from typing import List
 
-from mercado_bitcoin.apis import DaySummaryApi
+import mercado_bitcoin.apis
 
 
 class DataIngestor(ABC):
