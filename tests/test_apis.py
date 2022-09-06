@@ -1,8 +1,15 @@
 import datetime
 from unittest.mock import patch
 
+from dotenv import load_dotenv
+from os import getenv
+
 import pytest
 import requests
+
+#load_dotenv(r'C:\Users\silvi\.env')
+
+print("PYTHON PATH: ", getenv('PYTHONPATH'))
 
 from mercado_bitcoin.apis import DaySummaryApi, TradesApi, MercadoBitcoinApi
 
@@ -13,7 +20,7 @@ class TestDaySummaryApi:
         [
             ("BTC", datetime.date(2021, 6, 21), "https://www.mercadobitcoin.net/api/BTC/day-summary/2021/6/21"),
             ("ETH", datetime.date(2021, 6, 21), "https://www.mercadobitcoin.net/api/ETH/day-summary/2021/6/21"),
-            ("ETH", datetime.date(2019, 1, 2), "https://www.mercadobitcoin.net/api/ETH/day-summary/2019/1/2"),
+            ("ETH", datetime.date(2019, 1, 2), "https://www.mercadobitcoin.net/api/ETH/day-summary/2019/1/3"),
         ]
     )
     def test_get_endpoint(self, coin, date, expected):
@@ -33,6 +40,9 @@ class TestTradesApi:
             ("TEST", None, None,
              "https://www.mercadobitcoin.net/api/TEST/trades"),
             ("TEST", None, datetime.datetime(2021, 6, 15),
+
+
+
              "https://www.mercadobitcoin.net/api/TEST/trades"),
             ("TEST", datetime.datetime(2021, 6, 12), None,
              "https://www.mercadobitcoin.net/api/TEST/trades/1623452400"),
