@@ -7,7 +7,7 @@ from os import getenv
 import pytest
 import requests
 
-#load_dotenv(r'C:\Users\silvi\.env')
+load_dotenv(r'.env')
 
 print("PYTHON PATH: ", getenv('PYTHONPATH'))
 
