@@ -1,0 +1,28 @@
+docker ls  -> listar as imagens criadas
+
+docker exec -it image_name bash -l  -> entrar na imagem carregada
+root@: /$ ls
+
+https://crontab.guru/
+
+ git config --global user.name "Silvio Lima"
+git config --global user.email "silviolima07@gmail.com"
+
+git log
+
+git branch
+
+git checkout -b new_branch_name
+
+git checkout new_branch_name
+
+git checkout master
+
+git merge new_branch_name
+
+
+git rebase new_branch_name
+
+
+
+
