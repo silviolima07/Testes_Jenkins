@@ -3,6 +3,11 @@ from unittest.mock import patch, mock_open
 
 import pytest
 
+import sys
+
+sys.path.append('./')
+
+
 from mercado_bitcoin.ingestors import DataIngestor
 from mercado_bitcoin.writers import DataWriter
 

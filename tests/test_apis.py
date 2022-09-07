@@ -1,15 +1,16 @@
 import datetime
+from pydoc import pathdirs
 from unittest.mock import patch
 
 from dotenv import load_dotenv
 from os import getenv
 
+import sys
+
 import pytest
 import requests
 
-load_dotenv(r'.env')
-
-print("PYTHON PATH: ", getenv('PYTHONPATH'))
+sys.path.append('./')
 
 from mercado_bitcoin.apis import DaySummaryApi, TradesApi, MercadoBitcoinApi
 

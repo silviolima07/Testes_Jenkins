@@ -1,5 +1,9 @@
 import datetime
 
+import sys
+
+sys.path.append('./')
+
 from mercado_bitcoin.apis import DaySummaryApi
 
 
